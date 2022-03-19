@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	font-family: 'Helvetica';
+}
+
+/*Navigation - Start*/
+
+#navBar {
+	background-color: #e7e8e4;
+	box-shadow: 0px 0px 6px gray;
+	display: flex;
+	align-items: center;
+}
+
+#navAppName {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 12px 20px;
+	white-space: nowrap;
+}
+
+#navLogo {
+
+	height: 15px;
+}
+
+#navList {
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*List items*/
+#navList > li {
+	list-style-type: none;
+	margin: 0;
+	margin-left: auto;
+	padding: 14px 20px;
+	display: inline;
+}
+
+.profile-dropdown {
+	padding: 14px 20px;
+	position: relative;
+	display: inline-block;
+}
+
+.profile-dropdown-content {
+	display: none;
+	left: -5px;
+	top: 48px;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 60px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 26px;
+	z-index: 1;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+	display: block;
+}
+
+/*Navigation - End*/
+
+/*Header - Start*/
+
+.heading {
+	padding: 10px 20px;;
+}
+
+/*Header - End*/
+
+
+/*Content section - Start*/
+
+#contentSection {
+	height: auto;
+	min-height: 732px;
+}
+
+.menu-grid {
+	display: grid;	
+	gap: 50px;
+	padding: 100px 150px;;
+	margin: auto;
+	justify-content: center;
+	justify-items: center;
+	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+
+.menu-item {
+	width: 180px;
+	height: 180px;
+	font-size: 24px;
+	background-color: #e7e8e4;
+	border: 0;
+	box-shadow: 0px 0px 8px gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.menu-item:active{
+	transform: scale(0.98);
+}
+
+/*Content section - End*/
+
+
+/* Footer - Start */
+
+footer {
+	background-color: #e7e8e4;
+	min-height: 130px;
+	padding: 12px 20px;
+	box-shadow: 0px 0px 6px gray;
+	display: flex;
+}
+
+#developersContent {
+	margin-top: 10px;
+	max-width: 300px;
+}
+
+#infoContent {
+	margin-left: auto;
+	display: flex;
+}
+
+.link-list {
+	list-style: none;
+	padding: 0px 30px;
+	margin-left: auto;
+}
+
+.link-list > li {
+	line-height: 3;
+}
+
+#footerLogo {
+	padding: 40px 20px;
+	height: 50px;
+}
+
+/* Footer - End */
