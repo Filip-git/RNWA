@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+	<nav id="navBar">
+		<div id="navAppName">
+			<span>NorthWind</span>
+			<img src="../icons/northwind.png" id="navLogo"> 
+		</div>
+		<ul id="navList">
+			<li><a href="Search.html">Search</a></li>
+			<li><a>Profile Name</a></li>
+			<div class="profile-dropdown">
+				<span>Options</span>
+				<div class="profile-dropdown-content">
+				  <p>Profile</p>
+				  <p>Log out</p>
+				</div>
+			  </div>
+		</ul>
+	</nav>
+	<header>
+		<h1 class="heading">Employees Search</h1>
+	</header>
+	<div id="contentSection">
+		<div class="search-form">
+			<p><b>Employee name:</b></p>
+			<form> 
+			<input class="search-input" type="text" onkeyup="showHint(this.value)">
+			</form>
+			<p>Suggestions:<br> <span id="txtHint" style=""></span></p>
+		</div>
+	</div>
+	<footer>
+		<div id="developersContent">
+			<p>Project developers:</p>
+			<p>Matej Stojić</p>
+			<p>Filip Oroz</p>
+		</div>
+		<div id="infoContent">
+			<ul class="link-list">
+				<li>
+					Contact
+				</li>
+				<li>
+					About us
+				</li>
+
+			</ul>
+		</div>
+		<img src="../icons/northwind.png" id="footerLogo"> 
+	</footer>
+	<script src="script.js"></script>
+</body>
