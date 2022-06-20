@@ -1,0 +1,62 @@
+@media all and (max-width: 991px) {
+
+
+}
+
+@media all and (max-width: 768px) {
+
+    #navList {
+        padding-left: 0px;
+        text-align: end;
+    }
+
+    #navList > li, .profile-dropdown {
+        padding: 14px 10px;
+        
+    }
+
+    .profile-dropdown-content {
+        text-align: start;
+        left: -35px;
+    }
+
+    .menu-item {
+        width: 150px;
+        height: 150px;
+        font-size: 22px;
+        background-color: #e7e8e4;
+        border: 0;
+        box-shadow: 0px 0px 8px gray
+    }
+
+    .menu-grid {
+        display: grid;	
+        gap: 25px;
+        padding: 30px 40px;;
+        margin: auto;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    }
+
+    #developersContent {
+        width: 100%;
+        max-width: unset;
+        text-align: center;
+    }
+    
+    #infoContent {
+        width: 100%;
+        text-align: center;
+        display: block
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    #footerLogo {
+        padding: 20px 20px;
+    }
+}

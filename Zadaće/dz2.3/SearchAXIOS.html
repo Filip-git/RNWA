@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+	<nav id="navBar">
+		<div id="navAppName">
+			<span>NorthWind</span>
+			<img src="../icons/northwind.png" id="navLogo"> 
+		</div>
+		<ul id="navList">
+			<li><a href="../dz2/SearchAJAX.html">SearchAJAX</a></li>
+			<li><a href="../dz2.2/SearchJQ.html">SearchJQ</a></li>
+			<li><a href="../dz2.3/SearchAXIOS.html">SearchAXIOS</a></li>
+			<li><a href="../dz2.4/SearchFETCH.html">SearchFETCH</a></li>
+			<li><a>Profile Name</a></li>
+			<div class="profile-dropdown">
+				<span>Options</span>
+				<div class="profile-dropdown-content">
+				  <p>Profile</p>
+				  <p>Log out</p>
+				</div>
+			  </div>
+		</ul>
+	</nav>
+	<header>
+		<h1 class="heading">Employees Search</h1>
+	</header>
+	<div id="contentSection">
+		<div class="search-form">
+			<p><b>Employee name:</b></p>
+			<form> 
+			 <input
+                <input class="search-input"  
+				type="text"
+				name="search_text"
+				id="search_text"
+				placeholder="Search Employees"
+				/>
+			</form>
+			<p>Suggestions:<br> <div id="result"></div></p>
+		</div>
+	</div>
+	<footer>
+		<div id="developersContent">
+			<p>Project developers:</p>
+			<p>Matej Stojić</p>
+			<p>Filip Oroz</p>
+		</div>
+		<div id="infoContent">
+			<ul class="link-list">
+				<li>
+					Contact
+				</li>
+				<li>
+					About us
+				</li>
+
+			</ul>
+		</div>
+		<img src="../icons/northwind.png" id="footerLogo"> 
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="../dz2.3/script.js"></script>
+</body>
