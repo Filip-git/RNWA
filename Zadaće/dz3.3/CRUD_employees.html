@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./CRUD_functions.js"></script>
+</head>
+<script>
+
+    $(document).ready(function () {
+        setupCRUD("Employee", ["EmployeeID", "LastName", "FirstName", "BirthDate", "HomePhone", "HireDate", "Salary", "Address", "ReportsTo"])
+    })
+
+</script>
+<body>
+	<nav id="navBar">
+		<div id="navAppName">
+			<span>NorthWind</span>
+			<img src="../icons/northwind.png" id="navLogo"> 
+		</div>
+		<ul id="navList">
+			<li><a href="../dz2/SearchAJAX.html">SearchAJAX</a></li>
+			<li><a href="../dz2.2/SearchJQ.html">SearchJQ</a></li>
+			<li><a href="../dz2.3/SearchAXIOS.html">SearchAXIOS</a></li>
+			<li><a href="../dz2.4/SearchFETCH.html">SearchFETCH</a></li>
+			<li><a>Profile Name</a></li>
+			<div class="profile-dropdown">
+				<span>Options</span>
+				<div class="profile-dropdown-content">
+				  <p>Profile</p>
+				  <p>Log out</p>
+				</div>
+			  </div>
+		</ul>
+	</nav>
+	<header>
+		<h1 class="heading">Employees Search</h1>
+	</header>
+	<div id="contentSection">
+		<form class="search-form">
+			<input type="text" placeholder="Pretraga..." class="search surface-12 search-input" />
+		</form>
+		<div id="resultDiv"></div>
+	</div>
+	<footer>
+		<div id="developersContent">
+			<p>Project developers:</p>
+			<p>Matej Stojić</p>
+			<p>Filip Oroz</p>
+		</div>
+		<div id="infoContent">
+			<ul class="link-list">
+				<li>
+					Contact
+				</li>
+				<li>
+					About us
+				</li>
+
+			</ul>
+		</div>
+		<img src="../icons/northwind.png" id="footerLogo"> 
+	</footer>
+	<script src="../dz2.2/script.js"></script>
+    <div id="modalCover" class="display-none"></div>
+    <div id="dataModal" class="display-none">
+    </div>
+</body>
+</body>
+

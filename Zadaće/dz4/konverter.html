@@ -1,0 +1,71 @@
+<html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <title>Konverter valuta</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+          body {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height: 98vh;
+        }
+        #formKonverter {
+
+            border: 1px solid gainsboro;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h4 {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        .headline {
+            text-align:center;
+        }
+
+        .dropdown, .input {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+
+        .button {
+            margin: 20px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="konverter-wrapper">
+       
+        <form id="formKonverter" name="form" method="post" action="http://localhost/wsdl_soap/client.php">
+            <h4>Konverter valuta</h4>
+            <div>
+                <label for="value">Iznos</label>
+                <input id="value" name="value" type="text" class="dropdown" />
+            </div>
+            <div>
+                <label for="conv" class="headline">Konverzija</label>
+                <select name="conv" id="conv"  class="dropdown">
+                    <option value="b_e">BAM &emsp; -> &emsp;EUR</option>
+                    <option value="b_h">BAM &emsp; -> &emsp;HRK</option>
+                    <option value="e_b">EUR &emsp; -> &emsp;BAM</option>
+                    <option value="e_h">EUR &emsp; -> &emsp;HRK</option>
+                    <option value="h_b">HRK &emsp; -> &emsp;BAM</option>
+                    <option value="h_e">HRK &emsp; -> &emsp;EUR</option>
+
+                </select>
+            </div>
+            <div id="buttonSection">
+                <button type="submit" name="Submit" class="button">KONVERZIJA</button>
+            </div>
+        </form>
+    </div>
+
+    <body>
+
+</html>
